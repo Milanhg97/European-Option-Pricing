@@ -55,18 +55,6 @@ class BS{
       double div;
 };
 
-vector <double> linspace(double begin, double end, int times){
-  vector <double> liste;
-  if (times > 0){
-    double equivalent = (end - begin)/(times-1);
-
-    for (int i = 0; i < times ; i++){
-      liste.push_back(begin + i*equivalent);
-    }
-  }
-  return liste;
-};
-
 int main() {
 
   BS test(100, 110, 0.25, 0.05, 1, 0);
